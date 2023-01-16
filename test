@@ -1,0 +1,150 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <title>TD APPS</title>
+
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow p-0">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 d-none d-md-block" href="https://tdrentapps.com"><img
+                    src="https://tdrentapps.com/images/logo-red.png" class="logo"></a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <main class="col-md-12 ms-sm-auto col-lg-12">
+                <div>
+                    <h3>TD APPS</h3>
+
+                    <table class="table table-responsive table-hover text-break" x-data="">
+                        <tbody class="table-body-container">
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Открытие ссылок</td>
+                                <td style="display: flex; flex-direction: column; gap: 16px">
+                                    <button id="go_local" class="btn btn-primary">Go to http://localhost/</button>
+                                    <button id="NIK4" class="btn btn-primary">Parimatch</button>
+                                    <button id="vultest" class="btn btn-primary">Vultest</button> 
+                                    <button id="cocktest" class="btn btn-primary">Cocktest</button>
+                                </td>
+                            </tr>
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Открытие дочерних окон</td>
+                                <td>
+                                    <a href="https://google.com/" target="_blank">Google.com</a>
+                                </td>
+                            </tr>
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Выбор файлов. Проверьте что ваше устройство позволяет
+                                    прикрепить несколько
+                                    произвольных файлов. Часто используется при верификации документов.</td>
+                                <td>
+                                    <input type="file" multiple class="form-control">
+                                </td>
+                            </tr>
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Социальные сети и мессенджеры</td>
+                                <td>
+                                    Все ссылки должны работать корректно:
+                                    <ul>
+                                        <li><a href="https://t.me/u_now">Telegram HTTPS</a></li>
+                                        <li><a href="tg://resolve?domain=u_now">Telegram tg://</a></li>
+                                        <li><a href="viber://chat?number=098765432101">Viber viber://</a></li>
+                                        <li><a href="whatsapp://send?abid=john&amp;text=hello">Whatsapp whatsapp://</a></li>
+                                        <li><a href="line://ti/p/@99sabai">Line 99sabai</a></li>
+                                        <li><a href="tel://838929348">Make call 838929348</a></li>
+                                        <li><a href="/cdn-cgi/l/email-protection#ac8383c9c6c9c6c9c6c6c9eccbc1cdc5c082cfc3c1">Send mail (<span class="__cf_email__" data-cfemail="44212e212e212e2e21042329252d286a272b29">[email&#160;protected]</span>)</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Плеер YouTube позволяет проверить и воспроизведение звука, и
+                                    полноэкранный режим со
+                                    сменой ориентации в нем</td>
+                                <td>
+                                    <iframe width="300" height="200" src="https://www.youtube.com/embed/BHACKCNDMW8"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </td>
+                            </tr>
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Воспроизведение звуков посредством HTML5 Audio</td>
+                                <td>
+                                    <audio controls="">
+                                        <source
+                                            src="https://upload.wikimedia.org/wikipedia/en/8/89/Daft_Punk_-_Get_Lucky.ogg"
+                                            type="audio/ogg">
+                                        Не поддерживается
+                                    </audio>
+                                </td>
+                            </tr>
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Проверьте работоспособность прочих функций: камеры, открытие
+                                    дочерних окон и
+                                    диалогов при помощи JS (используется редко).
+                                    Также вы можете перейти по произвольному адресу</td>
+                                <td>
+                                    Используйте эти ссылки:
+                                    <ul>
+                                        <li><a href="https://webqr.com" target="_blank">WebQR.com</a></li>
+                                        <li>
+                                            <a onclick="var c = window.open('', 'Redirect'); c.document.write('It works! <a href=\'http://fposttestb.xyz/new_web.html\' target=\'_blank\'>Create New Tab</a>');  return false;"
+     href="#">window.open()</a>
+                                        </li>
+                                        <li><a onclick="alert('It works!'); return false;" href="#">alert()</a></li>
+                                        <li>
+                                            <div class="input-group"><input type="text" class="form-control"
+                                                    id="addr-editor" value="https://" autocomplete="off">
+                                                <a onclick="this.href=document.getElementById('addr-editor').value; return true;"
+                                                    href="#" target="_blank" class="btn btn-primary">
+                                                    Перейти
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr class="flex-container m-section m-mb-16">
+                                <td class="m-section-title">Адаптация окна браузера к изменяющимся размерам. Нажмите на
+                                    поле ввода и проверьте
+                                    чтобы клавиатура не мешала их заполнению.</td>
+                                <td>
+                                    <input type="text" value="Foo bar" class="form-control mb-3" />
+                                    <textarea cols="5" rows="5" class="form-control">Foo bar</textarea>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        go_local.onclick = () => { window.location.href = "http://localhost/" }
+        NIK4.onclick = () => { window.location.href = "https://affpros.net/?serial=8416&creative_id=515&anid={subid}_WebTest_UA" }
+        vultest.onclick = () => { window.location.href = "https://cakeglobaloffers.com/l/6081632398f4ed1e7169b66f?sub_id=WebTest_AR" }
+        cocktest.onclick = () => { window.location.href = "https://jackpotwinner.net/en/spin/mv1/ccc/app1/?aff_id=7075_60977_30519_1837397_57_213_3-WebTest&v=app1&seg=60977&lid=205318&lang=EN&durl=brw/ccc/9&dsite=rea" }
+    </script>
+</body>
+
+</html>
